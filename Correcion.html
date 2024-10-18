@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 0.1</title>
+    <!--------------------------------------------------------------Imagen ico.----------------------------------------------->
+    <link rel="shortcut icon" href="Perla_1.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.espaciado {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    gap: 0px;
+    margin: 0px;
+}
+
+.negrita {
+    font-weight: 200px;
+    font-size: 20px;
+    color: #322203;
+}
+
+.centro {
+    display: flex;
+    justify-content: center;
+}
+
+.caja {
+    background: #e0e1e6;
+    margin: 0px;
+    padding: 30px;
+}
+
+.imagen {
+    width: 50px;
+    border-radius: 100px;
+    box-shadow: 1px 3px 10px 1px #c9c7c7;
+    margin: 100px;
+    padding: 1px;
+}
+
+/* Comandos para alinear palabras */
+.inline-div {
+    display: inline-block;
+    margin: 0px;
+}
+
+/* Comandos para centrar un texto en una imagen */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px
+}
+
+.container>img {
+    width: 325px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.container>img:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    transform: translate(0%, -10%);
+}
+
+.centered {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #e0e1e6;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 50px;
+}
+
+/* Comando para un boton */
+.custom-btn {
+    background-color: #e7d7c9;
+    color: #322203;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.5s;
+    width: 8%;
+
+}
+
+.custom-btn:hover {
+    transform: translate(0%, -20%);
+    background-color: #cbbaac;
+    transition: 0.5s;
+    width: 10%;
+
+}
+@keyframes textAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+}
+
+.text-animation {
+    animation: textAnimation 3s ease-in-out infinite;
+}
+::-webkit-scrollbar {
+    width: 13px;
+    background-color: #e7d7c9;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #cbbaac;
+    border-radius: 10px;
+}
+
+    </style>
+</head>
+
+<body>
+    <div style="display: flex; justify-content: center; padding: 20px;">
+        <img class="imagen inline-div"
+            src="https://media.istockphoto.com/id/1222742365/es/vector/icono-de-la-l%C3%ADnea-de-perlas-ilustraci%C3%B3n-de-contorno-vectorial-de-la-concha-marina-pictorgam.jpg?s=612x612&w=0&k=20&c=xNZZq_GA2Ztkrf5qmlDg3MtFSGpl-RsVNMf2WmzpE54=">
+    </div>
+    <div class="espaciado negrita">
+        <h4>Servicios</h4>
+        <h4>Colecciones</h4>
+        <h2>MEGHAN LEUKO</h2>
+        <h4>Sobre Mi</h4>
+        <h4>Contactos</h4>
+    </div>
+    <hr>
+    <div class="caja container ">
+        <img src="https://i.pinimg.com/564x/59/17/28/5917288711b1509a8e121c926543b937.jpg">
+        <img src="https://i.pinimg.com/564x/4a/2d/e2/4a2de2f62e52e4715fab3a1bddeb7d05.jpg">
+        <img src="https://i.pinimg.com/enabled/564x/4e/49/e7/4e49e7172eeeac57b2a0ec560698df25.jpg">
+        <img src="https://i.pinimg.com/enabled/564x/fe/9e/3f/fe9e3f4f464ab9fa418898fae7e34d44.jpg">
+    </div>
+    <div class="negrita centered  ">
+        <h2>Joyería delicada hecha a la medida</h2>
+        <h3>Porque todos merecemos cosas únicas</h3>
+    </div>
+    <div style="margin-top: 20px;" class="container">
+        <button class="custom-btn">Contactar</button>
+    </div>
+
+</body>
+
+</html>
